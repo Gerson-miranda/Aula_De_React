@@ -1,0 +1,76 @@
+/* projeto-aulons\src\components\AdicionarUsuario\style.css */
+
+.container{
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgb(0, 255, 255) ;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+}
+.container input{
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: blanchedalmond;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    border-radius: 8px;
+
+    animation: sombraBrilhante 10s infinite alternate;
+
+}
+
+.container button{
+    padding: 0.8rem 1.5rem;
+    background-color: chocolate;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+
+    animation: mudarCor 3s infinite alternate;
+
+}
+
+@keyframes mudarCor {
+    0%   { background-color: #e73c3c; } /* vermelho */
+    25%  { background-color: #ff0000; } /* amarelo */
+    50%  { background-color: #2ecc71; } /* verde */
+    75%  { background-color: #3498db; } /* azul */
+    100% { background-color: #9b59b6; } /* roxo */
+}
+
+@keyframes sombraBrilhante {
+    0% {
+        box-shadow: 0 20px 50px rgb(177, 64, 64);
+    }
+    50% {
+        box-shadow: 0 10 20px rgb(255, 174, 0);
+    }
+    100% {
+        box-shadow: 0 4px 12px rgb(236, 4, 4);
+    }
+}
+
+.container button:hover{
+    background-color: darkorange;
+}
+.container ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.container li{
+    padding: 5px;
+    margin-bottom:5px ;
+    background-color: #fc9fd8;
+    border: 1px solid coral;
+}

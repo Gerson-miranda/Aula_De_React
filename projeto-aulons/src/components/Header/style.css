@@ -1,0 +1,13 @@
+/* projeto-aulons\src\components\Header\style.css */
+
+.header-container{
+    background-color: aqua;
+    color:chocolate;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-radius: 10%;
+
+}
