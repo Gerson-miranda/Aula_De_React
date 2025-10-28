@@ -5,3 +5,66 @@
   text-align: center;
 }
 
+/* ===== Reset básico ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #303030;
+  min-height: 100vh;
+}
+
+/* ===== Estrutura geral ===== */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* ===== Conteúdo principal ===== */
+.main-content {
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 2.2rem;
+  color: #007bff;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* ===== Dark Mode automático ===== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #eee;
+  }
+
+  .main-content h1 {
+    color: #00b4d8;
+  }
+}
