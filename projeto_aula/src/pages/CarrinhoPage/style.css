@@ -1,0 +1,43 @@
+.CarrinhoPage {
+  padding: 2rem;
+}
+
+.CarrinhoPage ul {
+  list-style: none;
+  padding: 0;
+}
+
+.CarrinhoPage li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.remover-btn {
+  background: #ff4747;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remover-btn:hover {
+  background: #ff1c1c;
+}
+
+.btn-pagar {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-pagar:hover {
+  background: #0056b3;
+}

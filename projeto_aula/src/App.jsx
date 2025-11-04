@@ -4,20 +4,29 @@ import Footer  from './componets/Footer'
 import Header from './componets/Header'
 import HomePage from './pages/HomePage'
 import SobreNosPage from './pages/SobreNosPage'
-import { Routes,Route } from 'react-router-dom'
-function App() {
+import FaleConoscoPage from './pages/FaleConoscoPage'
+import ServicosPage from './pages/ServicosPage'
+import CarrinhoPage from './pages/CarrinhoPage'
+import { Routes, Route } from 'react-router-dom'
+import { CartProvider } from './context/CartContext'
+import PagamentoPage from './pages/PagamentoPage';
 
+function App() {
   return (
-    <>
-    <Header/>
-    <main>
-      <Routes>
-        <Route path='/'element={<HomePage/>}/>
-        <Route path='/sobre-nos' element={<SobreNosPage/>}/>
-      </Routes>
-    </main>
+    <CartProvider>
+      <Header/>
+      <main>
+        <Routes>
+          <Route path='/' element={<HomePage/>}/>
+          <Route path='/sobre-nos' element={<SobreNosPage/>}/>
+          <Route path='/fale-conosco' element={<FaleConoscoPage/>}/>
+          <Route path='/servicos' element={<ServicosPage/>}/>
+          <Route path='/carrinho' element={<CarrinhoPage/>}/>
+          <Route path='/pagamento' element={<PagamentoPage/>}/>
+        </Routes>
+      </main>
       <Footer/>
-    </>
+    </CartProvider>
   )
 }
 
